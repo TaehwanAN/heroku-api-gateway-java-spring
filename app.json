@@ -28,7 +28,7 @@
         "SECRET_TOKEN": "secret_token_on_test"
       },
       "formation": {
-        "web": {
+        "test": {
           "quantity": 1,
           "size": "standard-1x"
         }
