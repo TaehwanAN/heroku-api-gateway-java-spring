@@ -13,4 +13,8 @@ public class TestController {
   public String main(){
     return "Hello This is Test Controller.";
   }
+  @GetMapping(rootPath+"/1")
+  public String test(){
+    return "Hello. Let's check Heroku CI";
+  }
 }
