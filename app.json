@@ -2,7 +2,7 @@
   "name": "heroku-api-gateway-spring-review-app",
   "addons": [
     {
-      "plan": "papertrial:choklad",
+      "plan": "papertrail:choklad",
       "as": "PAPERTRAIL"
     }
   ],
