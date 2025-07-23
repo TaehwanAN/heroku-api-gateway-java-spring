@@ -1,0 +1,32 @@
+{
+  "name": "heroku-api-gateway-spring-review-app",
+  "addons": [
+    {
+      "plan": "papertrial:choklad",
+      "as": "PAPERTRAIL"
+    }
+  ],
+  "env": {
+    "ENV_VAR_TEST": {
+      "description": "This is to create config var in review app with app.json",
+      "value": "123456789"
+    },
+    "SECRET_TOKEN": {
+      "description": "Secret Token will be set dependent on environments",
+      "generator": "secret"
+    }
+  },
+  "environments": {
+    "review": {
+      "env": {
+        "SECRET_TOKEN": "secret_token_on_review"
+      }
+    }
+  },
+  "foramation": {
+    "web": {
+      "quantity": 2,
+      "size": "eco"
+    }
+  }
+}
